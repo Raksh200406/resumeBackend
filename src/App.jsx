@@ -110,7 +110,7 @@ function Home({ file, setFile, setResult, loading, setLoading, jobDescription, s
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/resume/analyze",
+      "https://resumeanlyserbackend.onrender.com/api/resume/analyze",
       {
         method: "POST",
         body: formData
